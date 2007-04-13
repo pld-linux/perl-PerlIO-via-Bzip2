@@ -6,7 +6,7 @@
 %define	pdir	PerlIO
 %define	pnam	via-Bzip2
 Summary:	PerlIO::via::Bzip2 - PerlIO layer for Bzip2 (de)compression
-#Summary(pl.UTF-8):	
+Summary(pl.UTF-8):	PerlIO::via::Bzip2 - warstwa PerlIO do (de)kompresji Bzip2
 Name:		perl-PerlIO-via-Bzip2
 Version:	0.02
 Release:	1
@@ -28,8 +28,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This module implements a PerlIO layer which will let you handle bzip2
 compressed files transparently.
 
-# %description -l pl.UTF-8
-# TODO
+%description -l pl.UTF-8
+Ten moduł implementuje warstwę PerlIO pozwalającą obsługiwać w sposób
+przezroczysty pliki skompresowane algorytmem bzip2.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
