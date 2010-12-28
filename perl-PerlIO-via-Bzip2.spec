@@ -1,15 +1,15 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
+
+%define		pdir	PerlIO
+%define		pnam	via-Bzip2
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	PerlIO
-%define	pnam	via-Bzip2
 Summary:	PerlIO::via::Bzip2 - PerlIO layer for Bzip2 (de)compression
 Summary(pl.UTF-8):	PerlIO::via::Bzip2 - warstwa PerlIO do (de)kompresji Bzip2
 Name:		perl-PerlIO-via-Bzip2
 Version:	0.02
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -54,5 +54,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_vendorlib}/PerlIO/via/*.pm
-%{_mandir}/man3/*
+%{perl_vendorlib}/PerlIO/via/Bzip2.pm
+%{_mandir}/man3/PerlIO::via::Bzip2.3pm*
