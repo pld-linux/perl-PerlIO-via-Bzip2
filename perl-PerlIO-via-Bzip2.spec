@@ -8,7 +8,7 @@ Summary:	PerlIO::via::Bzip2 - PerlIO layer for Bzip2 (de)compression
 Summary(pl.UTF-8):	PerlIO::via::Bzip2 - warstwa PerlIO do (de)kompresji Bzip2
 Name:		perl-PerlIO-via-Bzip2
 Version:	0.02
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
